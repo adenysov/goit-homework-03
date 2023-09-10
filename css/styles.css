@@ -39,7 +39,7 @@ img {
   /*color: #4d5ae5;*/
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
 }
@@ -242,4 +242,5 @@ nav {
   display: flex;
   outline: 2px solid red;
   margin: 0 auto;
+  padding: 0 15px;
 }
