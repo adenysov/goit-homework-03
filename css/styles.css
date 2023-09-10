@@ -109,6 +109,15 @@ nav {
   max-width: 496px;
 }
 
+.overview-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.overview-section > .container > .list {
+  gap: 24px;
+}
+
 .overview-title {
   font-weight: 500;
   font-size: 20px;
