@@ -185,8 +185,9 @@ img {
   color: var(--main-text-color-light);
   display: block;
   min-width: 169px;
-  min-height: 56px;
+  height: 56px;
   border: none;
+  cursor: pointer;
   border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
