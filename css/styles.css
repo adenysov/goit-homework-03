@@ -53,6 +53,8 @@ img {
 }
 
 .header > .container {
+  flex-wrap: wrap;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -106,6 +108,7 @@ nav {
 }
 
 .hero > .container {
+  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -148,12 +151,27 @@ nav {
   letter-spacing: 0.02em;
 }
 
+.doing-section {
+  padding-bottom: 120px;
+}
+
+.doing-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.doing-list-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
 .doing-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
   color: var(--secondary-text-color-dark);
+  margin-bottom: 72px;
 }
 
 .team {
@@ -296,7 +314,7 @@ nav {
 
 .container {
   width: 1158px;
-  display: flex;
+  /* display: flex; */
   outline: 2px solid red;
   margin: 0 auto;
   padding: 0 15px;
