@@ -12,17 +12,17 @@ body {
 }
 
 /* PATERN FOR HIDE H2 "FEATURES" ON THE INDEX PAGE */
-.visially-hidden {
+.visually-hidden {
   position: absolute;
-  white-space: nowrap;
   width: 1px;
   height: 1px;
-  overflow: hidden;
+  margin: -1px;
   border: 0;
   padding: 0;
-  clip: rect (0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px'
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 img {
@@ -115,6 +115,7 @@ nav {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-dark);
+  margin-bottom: 8px;
 }
 
 .overview-text {
@@ -275,4 +276,3 @@ nav {
   margin: 0 auto;
   padding: 0 15px;
 }
-
