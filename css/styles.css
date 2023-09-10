@@ -39,8 +39,15 @@ img {
   /*color: #4d5ae5;*/
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 .address {
   font-style: normal;
+  display: flex;
+  align-items: center;
 }
 
 .address-link {
@@ -232,7 +239,7 @@ img {
 
 .container {
   width: 1158px;
-  margin: 0 auto;
   display: flex;
   outline: 2px solid red;
+  margin: 0 auto;
 }
