@@ -41,6 +41,10 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
+.header > .container {
+  justify-content: space-between;
+}
+
 .header-link {
   color: #2e2f42;
   font-weight: 500;
@@ -88,6 +92,12 @@ nav {
   color: var(--main-text-color-light);
   padding-top: 188px;
   padding-bottom: 188px;
+}
+
+.hero > .container {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
