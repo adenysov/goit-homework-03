@@ -25,6 +25,17 @@ body {
   overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+}
+
 img {
   display: block;
 }
@@ -114,10 +125,15 @@ nav {
   padding-bottom: 120px;
 }
 
-.overview-section > .container > .list {
+.overview-list {
+  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
+.overview-list-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
 .overview-title {
   font-weight: 500;
   font-size: 20px;
