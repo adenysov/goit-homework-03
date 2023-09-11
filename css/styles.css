@@ -52,7 +52,6 @@ img {
 }
 
 .header {
-  font-family: var(--secondary-font);
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -264,7 +263,7 @@ nav {
   --paragraph-text-color: #434455;
 }
 
-.logo {
+.logo-header {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 18px;
@@ -272,6 +271,7 @@ nav {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   margin-right: 76px;
+  font-family: var(--secondary-font);
 }
 
 .logo-hdr-black {
@@ -331,7 +331,6 @@ nav {
   background-color: #404bbf;
 }
 .footer {
-  font-family: var(--secondary-font);
   background-color: var(--secondary-background-color-dark);
   color: var(--main-text-color-light);
   padding-top: 100px;
@@ -343,10 +342,20 @@ nav {
   color: var(--list-text-color);
   letter-spacing: 0.02em;
   max-width: 264px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.ftr-logo {
+.logo-footer {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
   display: inline-block;
+  margin-bottom: 16px;
+  font-family: var(--secondary-font);
 }
 
 .container {
