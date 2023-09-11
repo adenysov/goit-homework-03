@@ -21,6 +21,7 @@
   --secondary-button-hover-text-color: #ffffff;
   --secondary-button-hover-background-color: #404bbf;
   --secondary-button-main-text-color: #4d5ae5;
+  --portfolio-list-item-border-color: #e7e9fc;
 }
 
 /* BASE STYLES */
@@ -390,6 +391,8 @@ nav {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-background-color-dark);
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .portfolio-card-list-text {
@@ -397,4 +400,12 @@ nav {
   line-height: 1.5;
   color: var(--paragraph-text-color);
   letter-spacing: 0.02em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.portfolio-feature-list-wrapper {
+  padding: 32px 16px;
+  border: 1px solid var(--portfolio-list-item-border-color);
+  border-top: none;
 }
