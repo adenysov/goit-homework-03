@@ -195,12 +195,19 @@ nav {
   gap: 24px;
 }
 
+.team-section-employee {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .team-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-background-color-dark);
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-list-text {
@@ -208,6 +215,7 @@ nav {
   line-height: 1.5;
   color: #434455;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .project-card-list-title {
