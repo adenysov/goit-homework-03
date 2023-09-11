@@ -1,7 +1,30 @@
+:root {
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --main-header-border-color: #e7e9fc;
+  --main-header-link-active-focus-color: #404bbf;
+  --main-background-color-light: #ffffff;
+  --main-background-color-medium: #f4f4fd;
+  --secondary-background-color-dark: #2e2f42;
+  --main-text-color-light: #ffffff;
+  --main-text-color-dark: #434455;
+  --secondary-text-color-dark: #2e2f42;
+  --main-button-background-color: #4d5ae5;
+  --list-text-color: #f4f4fd;
+  --button-seconday-background-color: #f4f4fd;
+  --secondary-button-border-color: #e7e9fc;
+  --paragraph-text-color: #434455;
+  --main-footer-logo-color: #4d5ae5;
+  --secondary-footer-logo-color: #f4f4fd;
+  --secondary-button-hover-text-color: #ffffff;
+  --secondary-button-hover-background-color: #404bbf;
+  --secondary-button-main-text-color: #4d5ae5;
+}
+
 /* BASE STYLES */
 body {
   font-family: var(--main-font);
-  color: #434455;
+  color: var(--main-text-color-dark);
   background-color: var(--main-background-color-light);
 }
 
@@ -52,7 +75,7 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--main-header-border-color);
 }
 
 .header > .container {
@@ -74,8 +97,7 @@ img {
 
 .header-link:focus,
 .header-link:hover {
-  color: #404bbf;
-  /*color: #4d5ae5;*/
+  color: var(--main-header-link-active-focus-color);
 }
 
 nav {
@@ -182,7 +204,7 @@ nav {
 }
 
 .team-section {
-  background-color: #f4f4fd;
+  background-color: var(--main-background-color-medium);
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -199,7 +221,7 @@ nav {
 }
 
 .team-list {
-  background-color: #f4f4fd;
+  background-color: var(--main-background-color-medium);
   gap: 24px;
   display: flex;
   margin-top: 0;
@@ -209,7 +231,7 @@ nav {
 .team-list-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
-  background-color: #ffffff;
+  background-color: var(--main-background-color-light);
 }
 
 .team-section-employee {
@@ -233,35 +255,6 @@ nav {
   color: #434455;
   letter-spacing: 0.02em;
   text-align: center;
-}
-
-.project-card-list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--secondary-background-color-dark);
-}
-
-.project-card-list-text {
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--paragraph-text-color);
-  letter-spacing: 0.02em;
-}
-
-:root {
-  --main-font: Roboto, sans-serif;
-  --secondary-font: Raleway, sans-serif;
-  --main-background-color-light: #ffffff;
-  --secondary-background-color-dark: #2e2f42;
-  --main-text-color-light: #ffffff;
-  --secondary-text-color-dark: #2e2f42;
-  --main-button-background-color: #4d5ae5;
-  --list-text-color: #f4f4fd;
-  --button-seconday-background-color: #f4f4fd;
-  --secondary-button-border-color: #e7e9fc;
-  --paragraph-text-color: #434455;
 }
 
 .logo-header {
@@ -290,7 +283,7 @@ nav {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #f4f4fd;
+  color: var(--secondary-footer-logo-color);
 }
 
 .btn-main {
@@ -311,7 +304,7 @@ nav {
 
 .btn-secondary {
   background-color: var(--button-seconday-background-color);
-  color: #4d5ae5;
+  color: var(--secondary-button-main-text-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -325,16 +318,17 @@ nav {
 .btn-main:focus,
 .btn-main:hover {
   cursor: pointer;
-  background-color: #404bbf;
+  background-color: var(--secondary-button-hover-background-color);
 }
 
 .btn-secondary:focus,
 .btn-secondary:hover {
   cursor: pointer;
-  color: #ffffff;
-  background-color: #404bbf;
+  color: var(--secondary-button-hover-text-color);
+  background-color: var(--secondary-button-hover-background-color);
   border: 1px solid transparent;
 }
+
 .footer {
   background-color: var(--secondary-background-color-dark);
   color: var(--main-text-color-light);
@@ -357,7 +351,7 @@ nav {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #4d5ae5;
+  color: var(--main-footer-logo-color);
   display: inline-block;
   margin-bottom: 16px;
   font-family: var(--secondary-font);
@@ -380,4 +374,25 @@ nav {
   justify-content: center;
   margin-bottom: 72px;
   gap: 24px;
+}
+
+.portfolio-features-list {
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-card-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-background-color-dark);
+}
+
+.portfolio-card-list-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--paragraph-text-color);
+  letter-spacing: 0.02em;
 }
