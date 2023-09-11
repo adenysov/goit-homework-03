@@ -14,6 +14,8 @@
   --button-seconday-background-color: #f4f4fd;
   --secondary-button-border-color: #e7e9fc;
   --paragraph-text-color: #434455;
+  --main-header-logo-color: #4d5ae5;
+  --seconday-header-logo-color: #2e2f42;
   --main-footer-logo-color: #4d5ae5;
   --secondary-footer-logo-color: #f4f4fd;
   --secondary-button-hover-text-color: #ffffff;
@@ -85,7 +87,7 @@ img {
 }
 
 .header-link {
-  color: #2e2f42;
+  color: var(--secondary-text-color-dark);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -112,7 +114,7 @@ nav {
 }
 
 .address-link {
-  color: #434455;
+  color: var(--main-text-color-dark);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -123,7 +125,7 @@ nav {
 
 .address-link:focus,
 .address-link:hover {
-  color: #404bbf;
+  color: var(--main-header-link-active-focus-color);
 }
 
 .hero {
@@ -252,7 +254,7 @@ nav {
 .team-list-text {
   font-size: 16px;
   line-height: 1.5;
-  color: #434455;
+  color: var(--main-text-color-dark);
   letter-spacing: 0.02em;
   text-align: center;
 }
@@ -263,7 +265,7 @@ nav {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #4d5ae5;
+  color: var(--main-header-logo-color);
   margin-right: 76px;
   font-family: var(--secondary-font);
 }
@@ -274,7 +276,7 @@ nav {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #2e2f42;
+  color: var(--seconday-header-logo-color);
 }
 
 .logo-ftr-white {
