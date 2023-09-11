@@ -193,6 +193,7 @@ nav {
 .team-list {
   background-color: #ffffff;
   gap: 24px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-section-employee {
