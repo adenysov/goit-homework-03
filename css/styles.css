@@ -260,6 +260,7 @@ nav {
   --main-button-background-color: #4d5ae5;
   --list-text-color: #f4f4fd;
   --button-seconday-background-color: #f4f4fd;
+  --secondary-button-border-color: #e7e9fc;
   --paragraph-text-color: #434455;
 }
 
@@ -316,6 +317,9 @@ nav {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--secondary-button-border-color);
 }
 
 .btn-main:focus,
@@ -329,6 +333,7 @@ nav {
   cursor: pointer;
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 .footer {
   background-color: var(--secondary-background-color-dark);
@@ -358,8 +363,21 @@ nav {
   font-family: var(--secondary-font);
 }
 
+/* Portfolio page */
+.portfolio-main-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.portfolio-filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+  gap: 24px;
 }
