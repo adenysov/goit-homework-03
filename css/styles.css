@@ -272,7 +272,7 @@ nav {
   margin-right: 76px;
 }
 
-.logo-hdr {
+.logo-hdr-black {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 18px;
@@ -281,7 +281,7 @@ nav {
   color: #2e2f42;
 }
 
-.logo-ftr {
+.logo-ftr-white {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 18px;
@@ -332,12 +332,19 @@ nav {
   font-family: var(--secondary-font);
   background-color: var(--secondary-background-color-dark);
   color: var(--main-text-color-light);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-text {
   line-height: 1.5;
   color: var(--list-text-color);
   letter-spacing: 0.02em;
+  max-width: 264px;
+}
+
+.ftr-logo {
+  display: inline-block;
 }
 
 .container {
